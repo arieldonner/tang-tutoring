@@ -17,3 +17,12 @@
 .logo {
     font-size: 2rem;
 }
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 32 / 9;
+    background-image: url('./images/beach-1866992_1280.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
