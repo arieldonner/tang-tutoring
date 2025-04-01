@@ -1,9 +1,17 @@
 .navbar-custom {
     background-color: #2C3E50;
+    background-image: url("./images/Tutoring\ Nav\ Bar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .white-text {
     color: white;
+}
+
+.gray-background {
+    background-color: #ECF0F1;
 }
 
 .navbar-toggler-icon {
@@ -26,3 +34,22 @@
     background-position: bottom;
     background-repeat: no-repeat;
 }
+
+.hero-text {
+    font-size: clamp(16px, 2vw, 64px);
+}
+
+.body-text {
+    font-size: 24px;
+}
+
+.copyright {
+    background-image: url("./images/Tutoring\ Nav\ Bar.png");
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+      height: 20vh;
+    }
+  }
