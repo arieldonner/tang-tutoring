@@ -1,9 +1,17 @@
-.navbar-custom {
+/* .navbar-custom {
     background-color: #2C3E50;
+    background-image: url("./images/Tutoring\ Nav\ Bar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .white-text {
     color: white;
+}
+
+.gray-background {
+    background-color: #ECF0F1;
 }
 
 .navbar-toggler-icon {
@@ -17,3 +25,67 @@
 .logo {
     font-size: 2rem;
 }
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 32 / 9;
+    background-image: url('./images/beach-1866992_1280.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    font-size: clamp(16px, 2vw, 64px);
+}
+
+.body-text {
+    font-size: 24px;
+}
+
+.copyright {
+    background-image: url("./images/Tutoring\ Nav\ Bar.png");
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+      height: 20vh;
+    }
+  } */
+   
+
+.hero {
+  /* gradient overlay on top of the photo */
+  background-image:
+    linear-gradient(135deg, rgba(26,43,76,.6) 0%, rgba(15,26,46,.6) 100%),
+    url("images/beach-1866992_1280.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 65vh;   /* fills most of the viewport */
+  position: relative;
+}
+
+.text-accent { color: var(--brand-accent) !important; }
+
+.about-photo-wrapper {
+  width: 180px;          /* final visible size */
+  height: 180px;         /* keep square */
+  border-radius: 50%;    /* makes it circular */
+  overflow: hidden;      /* hides everything outside circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* optional */
+}
+
+.about-photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills the circle */
+  object-position: 50% 15%; /* adjust vertical focus: 50% X, 20% Y */
+  display:block;
+}
+
