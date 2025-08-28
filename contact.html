@@ -1,13 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Contact Me</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tang Tutoring — Contact</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Icons (optional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Inline styles (move to styles.css later) -->
+  <style>
+    :root{ --brand-navy:#1a2b4c; --brand-navy-800:#0f1a2e; --brand-accent:#f5a623; --brand-accent-600:#d7901d; --brand-light:#f7f9fc; }
+    body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+    .text-brand{color:var(--brand-navy)!important}
+    .bg-brand{background:linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-800) 100%)}
+    .bg-brand-soft{background:var(--brand-light)}
+    .btn-accent{background:var(--brand-accent);color:#111;font-weight:600;border:none}
+    .btn-accent:hover{background:var(--brand-accent-600);color:#111}
+    footer{background:var(--brand-navy);color:#fff}
+    footer a{color:var(--brand-accent);text-decoration:none}
+    footer a:hover{text-decoration:underline}
+
+    .hero-contact{color:#fff;min-height:40vh;display:flex;align-items:center;background:
+      linear-gradient(135deg, rgba(26,43,76,.7) 0%, rgba(15,26,46,.7) 100%),
+      url('images/contact-hero.jpg') center/cover no-repeat;}
+
+    .card-clean{border:none;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+  </style>
 </head>
 <body>
-    
-</body>
-</html>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-brand shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Tang Tutoring</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="ms-lg-3">
+          <a href="contact.html" class="btn btn-accent">Schedule a Session</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-contact">
+    <div class="container py-5 text-center">
+      <h1 class="display-6 fw-bold">Contact Tang Tutoring</h1>
+      <p class="text-white-50 mb-0">Start with a <strong>free 30‑minute trial session</strong> — online anywhere or in‑person across Ventura County.</p>
+    </div>
+  </header>
+
+  <!-- Contact intro + quick info -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="card-clean p-4 rounded-4 h-100">
+            <h2 class="h5 text-brand mb-3">Get in touch</h2>
+            <p class="text-secondary">Tell us a bit about your student and what you’re looking for. We’ll reply within 1–2 business days to schedule your free trial.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Ventura County (in‑person) • Online anywhere</li>
+              <li class="mb-2"><i class="bi bi-clock me-2"></i>Most sessions are 60 minutes (longer by request)</li>
+              <li class="mb-2"><i class="bi bi-credit-card me-2"></i>Payments: Venmo, Zelle, cash, or check</li>
+            </ul>
+            <div class="p-3 bg-brand-soft rounded-4">
+              <div class="small text-secondary">Prefer email? Reach us at</div>
+              <a href="mailto:yourname@example.com" class="fw-semibold" style="color:var(--brand-navy)">yourname@example.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card-clean p-4 rounded-4 h-100">
+            <h2 class="h5 text-brand mb-3">Send a message</h2>
+            <!-- NOTE: Replace action with your backend endpoint when ready. For now this is a placeholder. -->
+            <form action="#" method="post" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="name" class="form-label">Your name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="phone" class="form-label">Phone (optional)</label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="e.g., 805-555-1234">
+                </div>
+                <div class="col-sm-6">
+                  <label for="relationship" class="form-label">I am the</label>
+                  <select class="form-select" id="relationship" name="relationship" required>
+                    <option value="" selected disabled>Choose one</option>
+                    <option>Parent/Guardian</option>
+                    <option>Student</option>
+                    <option>Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an option.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="service" class="form-label">Service interested in</label>
+                  <select class="form-select" id="service" name="service" required>
+                    <option value="" selected disabled>Choose one</option>
+                    <option>K–8 Tutoring (any subject)</option>
+                    <option>High School Math & Science (incl. AP)</option>
+                    <option>Intro to Programming</option>
+                    <option>Not sure yet</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a service.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="mode" class="form-label">Session type</label>
+                  <select class="form-select" id="mode" name="mode" required>
+                    <option value="" selected disabled>Choose one</option>
+                    <option>Online</option>
+                    <option>In‑person (Ventura County)</option>
+                    <option>Either is fine</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a session type.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="grade" class="form-label">Student grade</label>
+                  <input type="text" class="form-control" id="grade" name="grade" placeholder="e.g., 7th, 10th">
+                </div>
+                <div class="col-sm-6">
+                  <label for="times" class="form-label">Preferred days/times</label>
+                  <input type="text" class="form-control" id="times" name="times" placeholder="e.g., Tue/Thu after 4pm">
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Tell us about goals or challenges</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="What subjects, upcoming tests, or goals should we know about?"></textarea>
+                </div>
+                  <button class="btn btn-accent btn-lg" type="submit">Send Message</button>
+                </div>
+                <!-- Success/Failure placeholder -->
+                <div class="col-12">
+                  <div id="formStatus" class="mt-3" role="status" aria-live="polite"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-4">
+    <div class="container text-center">
+      <h5 class="fw-bold">Tang Tutoring</h5>
+      <p>Helping students build confidence in math, science, and programming.</p>
+      <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Online anywhere • In‑person across Ventura County</p>
+      <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:yourname@example.com" class="text-decoration-none" style="color:var(--brand-accent)">yourname@example.com</a></p>
+      <hr class="my-4" />
+      <div>© <span id="year"></span> Tang Tutoring</div>
+    </div>
+  </footer>
