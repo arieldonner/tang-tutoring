@@ -120,9 +120,9 @@
   /* gradient overlay on top of the photo */
   background-image:
     linear-gradient(135deg, rgba(26,43,76,.6) 0%, rgba(15,26,46,.6) 100%),
-    url("images/nitish-goswami-Ams91Wo635s-unsplash.jpg");
+    url("images/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 0%;
   background-repeat: no-repeat;
   color: white;
   min-height: 40vh;   
