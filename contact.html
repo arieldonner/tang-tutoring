@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tang Tutoring — Contact</title>
+  <title>Contact Tang Tutoring | Schedule a Free 30-Minute Trial Session</title>
+  <meta name="description" content="Get in touch with Tang Tutoring. Schedule your free 30-minute trial and discover how we make learning supportive, low-stress, and confidence-boosting across math, science, programming, and more.">
   <link rel="stylesheet" href="styles.css">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -40,6 +41,7 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
@@ -74,7 +76,7 @@
             </ul>
             <div class="p-3 bg-brand-soft rounded-4">
               <div class="small text-secondary">Prefer email? Reach us at</div>
-              <a href="mailto:yourname@example.com" class="fw-semibold" style="color:var(--brand-navy)">yourname@example.com</a>
+              <a href="mailto:info@tangtutoring.com" class="fw-semibold" style="color:var(--brand-navy)">info@tangtutoring.com</a>
             </div>
           </div>
         </div>
@@ -160,9 +162,10 @@
       <h5 class="fw-bold">Tang Tutoring</h5>
       <p>Helping students build confidence in math, science, and programming.</p>
       <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Online anywhere • In‑person across Ventura County</p>
-      <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:yourname@example.com" class="text-decoration-none" style="color:var(--brand-accent)">yourname@example.com</a></p>
+      <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@tangtutoring.com" class="text-decoration-none" style="color:var(--brand-accent)">info@tangtutoring.com</a></p>
       <hr class="my-4" />
       <div>© <span id="year"></span> Tang Tutoring</div>
+      <span class="d-block small text-secondary">This site was built by Tang Tutoring. <a href="mailto:info@tangtutoring.com" class="text-accent">We can build yours too</a>.</span>
     </div>
   </footer>
 
@@ -204,5 +207,6 @@
         }
       });
     })();
+    document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
